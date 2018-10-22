@@ -3,7 +3,7 @@ const path = require('path')
 const csv = require('csvtojson')
 
 
-const convertCsvToJson = (csvFilePath = './customer-data.csv', jsonFilePath = './converted-data.json') => {
+const convertCsvToJson = (csvFilePath = './customer-data.csv', jsonFilePath = 'customer-data.json') => {
   console.log('Converting file ', csvFilePath)
   const newJson =
     csv()
